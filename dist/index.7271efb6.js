@@ -27260,7 +27260,15 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _constant = require("../utils/constant");
+var _s = $RefreshSig$();
 function Header() {
+    _s();
+    const [userLogin, setUserLogin] = (0, _react.useState)("Login");
+    function handleLogin() {
+        setUserLogin((preValue)=>{
+            return preValue == "Login" ? "Logout" : "Login";
+        });
+    }
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -27268,52 +27276,61 @@ function Header() {
                 alt: "logo"
             }, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 8,
+                lineNumber: 16,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
                 children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        onClick: handleLogin,
+                        children: userLogin
+                    }, void 0, false, {
+                        fileName: "src/components/Header.js",
+                        lineNumber: 18,
+                        columnNumber: 17
+                    }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: "HOME"
                     }, void 0, false, {
                         fileName: "src/components/Header.js",
-                        lineNumber: 10,
+                        lineNumber: 19,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: "ABOUT US"
                     }, void 0, false, {
                         fileName: "src/components/Header.js",
-                        lineNumber: 11,
+                        lineNumber: 20,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: "CONTACT US"
                     }, void 0, false, {
                         fileName: "src/components/Header.js",
-                        lineNumber: 12,
+                        lineNumber: 21,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: "CART"
                     }, void 0, false, {
                         fileName: "src/components/Header.js",
-                        lineNumber: 13,
+                        lineNumber: 22,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Header.js",
-                lineNumber: 9,
+                lineNumber: 17,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/components/Header.js",
-        lineNumber: 7,
+        lineNumber: 15,
         columnNumber: 9
     }, this);
 }
+_s(Header, "pa1aQvDJJcYfB4LDMJZB2fQ1/eg=");
 _c = Header;
 var _c;
 $RefreshReg$(_c, "Header");
@@ -27516,24 +27533,75 @@ var _resCard = require("./ResCard");
 var _resCardDefault = parcelHelpers.interopDefault(_resCard);
 var _mockData = require("../utils/mockData");
 var _mockDataDefault = parcelHelpers.interopDefault(_mockData);
+var _shimmer = require("./Shimmer");
+var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
 var _s = $RefreshSig$();
 function Main() {
     _s();
     const [listOfRestaurants, setListOfRestaurants] = (0, _react.useState)((0, _mockDataDefault.default));
+    (0, _react.useEffect)(()=>{
+        console.log("Chotu");
+    }, []);
+    //Fetch api
+    // const Fetch= async ()=>{
+    //     const data= await fetch('');
+    //     const json= await data.json();
+    //     console.log(json);
+    //     setListOfRestaurants()
+    // }
+    if (listOfRestaurants === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
+        fileName: "src/components/Main.js",
+        lineNumber: 27,
+        columnNumber: 11
+    }, this);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "main-section",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                onClick: ()=>{
-                    let filterList = listOfRestaurants.filter((res)=>res.data.avgRating > 3);
-                    // console.log(filterList)
-                    setListOfRestaurants(filterList);
-                },
-                children: "Search"
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        type: "text",
+                        placeholder: "Search Restaurants"
+                    }, void 0, false, {
+                        fileName: "src/components/Main.js",
+                        lineNumber: 32,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        onClick: ()=>{
+                            console.log("Search");
+                        },
+                        children: "Search"
+                    }, void 0, false, {
+                        fileName: "src/components/Main.js",
+                        lineNumber: 33,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Main.js",
+                lineNumber: 31,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    onClick: ()=>{
+                        let filterList = listOfRestaurants.filter((res)=>{
+                            return res.data.avgRating > 4;
+                        });
+                        // console.log(filterList)
+                        setListOfRestaurants(filterList);
+                    },
+                    children: "Top Rated Restuarant"
+                }, void 0, false, {
+                    fileName: "src/components/Main.js",
+                    lineNumber: 40,
+                    columnNumber: 14
+                }, this)
             }, void 0, false, {
                 fileName: "src/components/Main.js",
-                lineNumber: 11,
-                columnNumber: 14
+                lineNumber: 39,
+                columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "main-section card-container",
@@ -27541,22 +27609,22 @@ function Main() {
                         resData: restaurant
                     }, restaurant.data.id, false, {
                         fileName: "src/components/Main.js",
-                        lineNumber: 21,
+                        lineNumber: 53,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "src/components/Main.js",
-                lineNumber: 19,
+                lineNumber: 51,
                 columnNumber: 14
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/components/Main.js",
-        lineNumber: 10,
+        lineNumber: 30,
         columnNumber: 9
     }, this);
 }
-_s(Main, "+TFv10lCd7dLf7ypo/aLMvEY77A=");
+_s(Main, "d3JHwvmfcaunFeSoOJfQdCbacP0=");
 _c = Main;
 var _c;
 $RefreshReg$(_c, "Main");
@@ -27566,7 +27634,7 @@ $RefreshReg$(_c, "Main");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./ResCard":"ezFeH","../utils/mockData":"iOpE9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ezFeH":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./ResCard":"ezFeH","../utils/mockData":"iOpE9","./Shimmer":"g6ZGj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ezFeH":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$40f6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27659,7 +27727,7 @@ $RefreshReg$(_c, "ResCard");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"21dqq","../utils/constant":"6mqGZ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react/jsx-dev-runtime":"iTorj"}],"iOpE9":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../utils/constant":"6mqGZ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iOpE9":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 const resList = [
@@ -29731,7 +29799,72 @@ const resList = [
 ];
 exports.default = resList;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8pPOA":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"g6ZGj":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0b04 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0b04.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const Shimmer = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "shimmer-container",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-cards",
+                children: "Cards"
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 6,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-cards",
+                children: "Cards"
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 7,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-cards",
+                children: "Cards"
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 8,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-cards",
+                children: "Cards"
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 9,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Shimmer.js",
+        lineNumber: 5,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Shimmer;
+exports.default = Shimmer;
+var _c;
+$RefreshReg$(_c, "Shimmer");
+
+  $parcel$ReactRefreshHelpers$0b04.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8pPOA":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$bc7c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
