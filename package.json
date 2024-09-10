@@ -1,0 +1,29 @@
+{
+  "name": "foodie",
+  "version": "1.0.0",
+  "main": "src/App.js",
+  "scripts": {
+    "start": "parcel index.html --no-cache",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "author": "xenone",
+  "license": "ISC",
+  "description": "foodie app to order foods online",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ven1nom/foodie_react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ven1nom/foodie_react/issues"
+  },
+  "homepage": "https://github.com/ven1nom/foodie_react#readme"
+}
