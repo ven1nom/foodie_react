@@ -2,6 +2,7 @@
   "name": "foodie",
   "version": "1.0.0",
   "main": "src/App.js",
+  "type": "module",
   "scripts": {
     "start": "parcel index.html --no-cache",
     "build": "parcel build index.html",
