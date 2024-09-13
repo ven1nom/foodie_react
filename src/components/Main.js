@@ -49,7 +49,7 @@ export default function Main()
              }}
              >Top Rated Restuarant</button>
              </div>
-             <div className="main-section card-container">
+             <div className="card-container">
              {listOfRestaurants.map((restaurant) => (
           <ResCard key={restaurant.data.id} resData={restaurant} />
         ))}
