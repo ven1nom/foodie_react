@@ -3,6 +3,8 @@ import ResCard from "./ResCard"
 import resList from "../utils/mockData"
 import RestaurantCard from "./ResCard";
 import Shimmer from "./Shimmer";
+import useOnlineStatus from "./useOnlineStatus";
+
 export default function Main()
 {
     const [listOfRestaurants,setListOfRestaurants]=useState(resList)
@@ -22,7 +24,14 @@ export default function Main()
         
 
     // }
+ const {onlineStatus}=useOnlineStatus;
 
+if(onlineStatus===false)
+{
+    return(
+        <h1>You are Offline</h1>
+    )
+}
    if(listOfRestaurants===0)
    {
    return <Shimmer/>
