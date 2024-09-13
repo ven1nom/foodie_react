@@ -9,15 +9,16 @@ export default function Main()
     
 
     useEffect(()=>{
-        console.log("Chotu")
+       console.log("Chotu")
+       //Fetch();
     },[])
  
-    //Fetch api
     // const Fetch= async ()=>{
-    //     const data= await fetch('');
+    //     const data= await fetch("https://www.swiggy.com/mapi/homepage/getCards?lat=18.61610&lng=73.72860");
     //     const json= await data.json();
-    //     console.log(json);
-    //     setListOfRestaurants()
+    //     console.log(json?.data?.success?.cards[3]?.gridWidget?.gridElements?.infoWithStyle?.restaurants);
+    //     const cardList=json?.data?.success?.cards[3]?.gridWidget?.gridElements?.infoWithStyle?.restaurants;
+    //     setListOfRestaurants(cardList)
         
 
     // }

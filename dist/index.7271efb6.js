@@ -27541,17 +27541,18 @@ function Main() {
     const [listOfRestaurants, setListOfRestaurants] = (0, _react.useState)((0, _mockDataDefault.default));
     (0, _react.useEffect)(()=>{
         console.log("Chotu");
+    //Fetch();
     }, []);
-    //Fetch api
     // const Fetch= async ()=>{
-    //     const data= await fetch('');
+    //     const data= await fetch("https://www.swiggy.com/mapi/homepage/getCards?lat=18.61610&lng=73.72860");
     //     const json= await data.json();
-    //     console.log(json);
-    //     setListOfRestaurants()
+    //     console.log(json?.data?.success?.cards[3]?.gridWidget?.gridElements?.infoWithStyle?.restaurants);
+    //     const cardList=json?.data?.success?.cards[3]?.gridWidget?.gridElements?.infoWithStyle?.restaurants;
+    //     setListOfRestaurants(cardList)
     // }
     if (listOfRestaurants === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/Main.js",
-        lineNumber: 27,
+        lineNumber: 28,
         columnNumber: 11
     }, this);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27564,7 +27565,7 @@ function Main() {
                         placeholder: "Search Restaurants"
                     }, void 0, false, {
                         fileName: "src/components/Main.js",
-                        lineNumber: 32,
+                        lineNumber: 33,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -27574,13 +27575,13 @@ function Main() {
                         children: "Search"
                     }, void 0, false, {
                         fileName: "src/components/Main.js",
-                        lineNumber: 33,
+                        lineNumber: 34,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Main.js",
-                lineNumber: 31,
+                lineNumber: 32,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27595,12 +27596,12 @@ function Main() {
                     children: "Top Rated Restuarant"
                 }, void 0, false, {
                     fileName: "src/components/Main.js",
-                    lineNumber: 40,
+                    lineNumber: 41,
                     columnNumber: 14
                 }, this)
             }, void 0, false, {
                 fileName: "src/components/Main.js",
-                lineNumber: 39,
+                lineNumber: 40,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27609,18 +27610,18 @@ function Main() {
                         resData: restaurant
                     }, restaurant.data.id, false, {
                         fileName: "src/components/Main.js",
-                        lineNumber: 53,
+                        lineNumber: 54,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "src/components/Main.js",
-                lineNumber: 51,
+                lineNumber: 52,
                 columnNumber: 14
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/components/Main.js",
-        lineNumber: 30,
+        lineNumber: 31,
         columnNumber: 9
     }, this);
 }
