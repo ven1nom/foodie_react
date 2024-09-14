@@ -3081,7 +3081,7 @@ $RefreshReg$(_c1, "AppLayout");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/Header":"hsJbF","./components/Main":"jWapa","./components/Footer":"8pPOA","react-router-dom":"9xmpe","./components/About":"9R1Eu","./components/Contact":"cgAOG","./components/Error":"kvula","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","6bf9e24f54814dcb":"e2h3k"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/Header":"hsJbF","./components/Main":"jWapa","./components/Footer":"8pPOA","react-router-dom":"9xmpe","./components/About":"9R1Eu","./components/Contact":"cgAOG","./components/Error":"kvula","6bf9e24f54814dcb":"e2h3k","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27350,7 +27350,7 @@ function Header() {
             return preValue == "Login" ? "Logout" : "Login";
         });
     }
-    const { onlineStatus } = (0, _useOnlineStatusDefault.default);
+    const onlineStatus = (0, _useOnlineStatusDefault.default)();
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -27358,7 +27358,7 @@ function Header() {
                 alt: "logo"
             }, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 21,
+                lineNumber: 22,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -27368,37 +27368,23 @@ function Header() {
                         children: userLogin
                     }, void 0, false, {
                         fileName: "src/components/Header.js",
-                        lineNumber: 23,
-                        columnNumber: 17
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        children: [
-                            "OnlineStatus:",
-                            onlineStatus ? "YES" : "NO"
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/Header.js",
                         lineNumber: 24,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                            to: "/",
-                            children: "HOME"
-                        }, void 0, false, {
-                            fileName: "src/components/Header.js",
-                            lineNumber: 25,
-                            columnNumber: 21
-                        }, this)
-                    }, void 0, false, {
+                        children: [
+                            "OnlineStatus: ",
+                            onlineStatus ? "YES" : "NO"
+                        ]
+                    }, void 0, true, {
                         fileName: "src/components/Header.js",
                         lineNumber: 25,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                            to: "/about",
-                            children: "ABOUT US"
+                            to: "/",
+                            children: "HOME"
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
                             lineNumber: 26,
@@ -27411,8 +27397,8 @@ function Header() {
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                            to: "/contact",
-                            children: "CONTACT US"
+                            to: "/about",
+                            children: "ABOUT US"
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
                             lineNumber: 27,
@@ -27425,8 +27411,8 @@ function Header() {
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                            to: "/grocery",
-                            children: "GROCERY"
+                            to: "/contact",
+                            children: "CONTACT US"
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
                             lineNumber: 28,
@@ -27438,26 +27424,44 @@ function Header() {
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        children: "CART"
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "/grocery",
+                            children: "GROCERY"
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 29,
+                            columnNumber: 21
+                        }, this)
                     }, void 0, false, {
                         fileName: "src/components/Header.js",
                         lineNumber: 29,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        children: "CART"
+                    }, void 0, false, {
+                        fileName: "src/components/Header.js",
+                        lineNumber: 30,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Header.js",
-                lineNumber: 22,
+                lineNumber: 23,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/components/Header.js",
-        lineNumber: 20,
+        lineNumber: 21,
         columnNumber: 9
     }, this);
 }
-_s(Header, "pa1aQvDJJcYfB4LDMJZB2fQ1/eg=");
+_s(Header, "wDDpVF5IGFtUaKzZlF9+cgxDaws=", false, function() {
+    return [
+        (0, _useOnlineStatusDefault.default)
+    ];
+});
 _c = Header;
 var _c;
 $RefreshReg$(_c, "Header");
@@ -34883,6 +34887,8 @@ var _s = $RefreshSig$();
 function Main() {
     _s();
     const [listOfRestaurants, setListOfRestaurants] = (0, _react.useState)((0, _mockDataDefault.default));
+    //HOC
+    const RestCardPromoted = (0, _resCard.withPromotedLabel)((0, _resCardDefault.default));
     (0, _react.useEffect)(()=>{
         console.log("Chotu");
     //Fetch();
@@ -34899,12 +34905,12 @@ function Main() {
         children: "You are Offline"
     }, void 0, false, {
         fileName: "src/components/Main.js",
-        lineNumber: 32,
+        lineNumber: 35,
         columnNumber: 9
     }, this);
     if (listOfRestaurants === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/Main.js",
-        lineNumber: 37,
+        lineNumber: 40,
         columnNumber: 11
     }, this);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34917,7 +34923,7 @@ function Main() {
                         placeholder: "Search Restaurants"
                     }, void 0, false, {
                         fileName: "src/components/Main.js",
-                        lineNumber: 42,
+                        lineNumber: 45,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -34927,13 +34933,13 @@ function Main() {
                         children: "Search"
                     }, void 0, false, {
                         fileName: "src/components/Main.js",
-                        lineNumber: 43,
+                        lineNumber: 46,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Main.js",
-                lineNumber: 41,
+                lineNumber: 44,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34948,32 +34954,38 @@ function Main() {
                     children: "Top Rated Restuarant"
                 }, void 0, false, {
                     fileName: "src/components/Main.js",
-                    lineNumber: 50,
+                    lineNumber: 53,
                     columnNumber: 14
                 }, this)
             }, void 0, false, {
                 fileName: "src/components/Main.js",
-                lineNumber: 49,
+                lineNumber: 52,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "card-container",
-                children: listOfRestaurants.map((restaurant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resCardDefault.default), {
+                children: listOfRestaurants.map((restaurant)=>restaurant.data.promoted ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestCardPromoted, {
                         resData: restaurant
                     }, restaurant.data.id, false, {
                         fileName: "src/components/Main.js",
-                        lineNumber: 63,
-                        columnNumber: 11
+                        lineNumber: 67,
+                        columnNumber: 18
+                    }, this) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resCardDefault.default), {
+                        resData: restaurant
+                    }, restaurant.data.id, false, {
+                        fileName: "src/components/Main.js",
+                        lineNumber: 69,
+                        columnNumber: 18
                     }, this))
             }, void 0, false, {
                 fileName: "src/components/Main.js",
-                lineNumber: 61,
+                lineNumber: 64,
                 columnNumber: 14
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/components/Main.js",
-        lineNumber: 40,
+        lineNumber: 43,
         columnNumber: 9
     }, this);
 }
@@ -34996,6 +35008,7 @@ $parcel$ReactRefreshHelpers$40f6.prelude(module);
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "withPromotedLabel", ()=>withPromotedLabel);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
@@ -35071,6 +35084,32 @@ const ResCard = (props)=>{
     }, undefined);
 };
 _c = ResCard;
+const withPromotedLabel = (ResCard)=>{
+    return (props)=>{
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                    children: "Promoted"
+                }, void 0, false, {
+                    fileName: "src/components/ResCard.js",
+                    lineNumber: 42,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ResCard, {
+                    ...props
+                }, void 0, false, {
+                    fileName: "src/components/ResCard.js",
+                    lineNumber: 43,
+                    columnNumber: 17
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/ResCard.js",
+            lineNumber: 41,
+            columnNumber: 13
+        }, undefined);
+    };
+};
 exports.default = ResCard;
 var _c;
 $RefreshReg$(_c, "ResCard");
@@ -35928,6 +35967,7 @@ const resList = [
             maxDeliveryTime: 36,
             slaString: "36 MINS",
             lastMileTravel: 4.5,
+            promoted: false,
             slugs: {
                 restaurant: "al-daaz-hsr-hsr",
                 city: "bangalore"
@@ -36031,6 +36071,7 @@ const resList = [
             maxDeliveryTime: 37,
             slaString: "37 MINS",
             lastMileTravel: 4,
+            promoted: true,
             slugs: {
                 restaurant: "roti-wala-lavelle-road-central-bangalore",
                 city: "bangalore"
@@ -36169,6 +36210,7 @@ const resList = [
             maxDeliveryTime: 22,
             slaString: "22 MINS",
             lastMileTravel: 2.5,
+            promoted: false,
             slugs: {
                 restaurant: "rice-bowl-koramangala-koramangala-2",
                 city: "bangalore"
@@ -36313,6 +36355,7 @@ const resList = [
             maxDeliveryTime: 24,
             slaString: "24 MINS",
             lastMileTravel: 2.5,
+            promoted: true,
             slugs: {
                 restaurant: "kannur-food-kitchen-btm-btm",
                 city: "bangalore"
@@ -36465,6 +36508,7 @@ const resList = [
             maxDeliveryTime: 28,
             slaString: "28 MINS",
             lastMileTravel: 4.5,
+            promoted: true,
             slugs: {
                 restaurant: "litti-twist-2nd-stage-btm",
                 city: "bangalore"
@@ -36615,6 +36659,7 @@ const resList = [
             maxDeliveryTime: 36,
             slaString: "36 MINS",
             lastMileTravel: 5,
+            promoted: false,
             slugs: {
                 restaurant: "shanmukha-restaurant-jayanagar-jayanagar",
                 city: "bangalore"
@@ -36754,6 +36799,7 @@ const resList = [
             maxDeliveryTime: 36,
             slaString: "36 MINS",
             lastMileTravel: 5,
+            promoted: true,
             slugs: {
                 restaurant: "malnad-donne-biryani-mdb-jayanagar-jayanagar",
                 city: "bangalore"
@@ -36893,6 +36939,7 @@ const resList = [
             maxDeliveryTime: 29,
             slaString: "29 MINS",
             lastMileTravel: 4.5,
+            promoted: false,
             slugs: {
                 restaurant: "litti-twist-koramangala-koramangala",
                 city: "bangalore"
@@ -37040,6 +37087,7 @@ const resList = [
             maxDeliveryTime: 30,
             slaString: "30 MINS",
             lastMileTravel: 5.599999904632568,
+            promoted: true,
             slugs: {
                 restaurant: "udupi-palace-00-hsr",
                 city: "bangalore"

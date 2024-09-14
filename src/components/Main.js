@@ -1,15 +1,18 @@
 import React,{useEffect, useState} from "react"
-import ResCard from "./ResCard"
+import ResCard,{withPromotedLabel} from "./ResCard"
 import resList from "../utils/mockData"
 import RestaurantCard from "./ResCard";
 import Shimmer from "./Shimmer";
 import useOnlineStatus from "./useOnlineStatus";
 
+
 export default function Main()
 {
     const [listOfRestaurants,setListOfRestaurants]=useState(resList)
     
-
+    //HOC
+    const RestCardPromoted=withPromotedLabel(ResCard);
+    
     useEffect(()=>{
        console.log("Chotu")
        //Fetch();
@@ -60,8 +63,12 @@ if(onlineStatus===false)
              </div>
              <div className="card-container">
              {listOfRestaurants.map((restaurant) => (
-          <ResCard key={restaurant.data.id} resData={restaurant} />
-        ))}
+               restaurant.data.promoted ? (
+                 <RestCardPromoted resData={restaurant} key={restaurant.data.id} />
+               ) : (
+                 <ResCard resData={restaurant} key={restaurant.data.id} />
+               )
+             ))}
              </div>
     
         </div>  

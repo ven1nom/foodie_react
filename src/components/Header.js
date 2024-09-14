@@ -14,14 +14,15 @@ function handleLogin()
     })
 }
 
-const{onlineStatus}=useOnlineStatus;
+const onlineStatus = useOnlineStatus();
+
     return(
 
         <nav>
             <img src={LOGO_URL} alt="logo"/>
             <ul >
                 <button onClick={handleLogin}>{userLogin}</button>
-                <li>OnlineStatus:{onlineStatus ? "YES" :"NO"}</li>
+                <li>OnlineStatus: {onlineStatus ? "YES" : "NO"}</li>
                 <li><Link to="/">HOME</Link></li>
                 <li><Link to="/about">ABOUT US</Link></li>
                 <li><Link to="/contact">CONTACT US</Link></li>
