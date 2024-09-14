@@ -1,4 +1,3 @@
-
 const resList = [
     {
       type: 'restaurant',
@@ -20,6 +19,7 @@ const resList = [
         maxDeliveryTime: 24,
         slaString: '24 MINS',
         lastMileTravel: 3,
+        promoted:true,
         slugs: {
           restaurant: 'kannur-food-point-btm',
           city: 'bangalore',
@@ -168,6 +168,7 @@ const resList = [
         maxDeliveryTime: 16,
         slaString: '16 MINS',
         lastMileTravel: 1.399999976158142,
+        promoted:false,
         slugs: {
           restaurant: 'meghana-foods-5th-block-koramangala',
           city: 'bangalore',
@@ -264,6 +265,7 @@ const resList = [
         maxDeliveryTime: 19,
         slaString: '19 MINS',
         lastMileTravel: 1.899999976158142,
+        promoted:true,
         slugs: {
           restaurant: 'biryani-pot-madiwala-junction-btm',
           city: 'bangalore',
@@ -399,6 +401,7 @@ const resList = [
         maxDeliveryTime: 30,
         slaString: '30 MINS',
         lastMileTravel: 1.600000023841858,
+        promoted:true,
         slugs: {
           restaurant: 'truffles-ice-spice-5th-block-koramangala',
           city: 'bangalore',
@@ -540,6 +543,7 @@ const resList = [
         maxDeliveryTime: 23,
         slaString: '23 MINS',
         lastMileTravel: 1.2999999523162842,
+        promoted:true,
         slugs: {
           restaurant: 'hotel-empire-5th-block-koramangala',
           city: 'bangalore',
@@ -676,6 +680,7 @@ const resList = [
         maxDeliveryTime: 26,
         slaString: '26 MINS',
         lastMileTravel: 4,
+        promoted:false,
         slugs: {
           restaurant: 'asha-tiffins-hsr-hsr-2',
           city: 'bangalore',
@@ -824,6 +829,7 @@ const resList = [
         maxDeliveryTime: 36,
         slaString: '36 MINS',
         lastMileTravel: 4.5,
+        promoted:false,
         slugs: {
           restaurant: 'al-daaz-hsr-hsr',
           city: 'bangalore',
@@ -927,6 +933,7 @@ const resList = [
         maxDeliveryTime: 37,
         slaString: '37 MINS',
         lastMileTravel: 4,
+        promoted:true,
         slugs: {
           restaurant: 'roti-wala-lavelle-road-central-bangalore',
           city: 'bangalore',
@@ -1062,6 +1069,7 @@ const resList = [
         maxDeliveryTime: 22,
         slaString: '22 MINS',
         lastMileTravel: 2.5,
+        promoted:false,
         slugs: {
           restaurant: 'rice-bowl-koramangala-koramangala-2',
           city: 'bangalore',
@@ -1203,6 +1211,7 @@ const resList = [
         maxDeliveryTime: 24,
         slaString: '24 MINS',
         lastMileTravel: 2.5,
+        promoted:true,
         slugs: {
           restaurant: 'kannur-food-kitchen-btm-btm',
           city: 'bangalore',
@@ -1354,6 +1363,7 @@ const resList = [
         maxDeliveryTime: 28,
         slaString: '28 MINS',
         lastMileTravel: 4.5,
+        promoted:true,
         slugs: {
           restaurant: 'litti-twist-2nd-stage-btm',
           city: 'bangalore',
@@ -1505,6 +1515,7 @@ const resList = [
         maxDeliveryTime: 36,
         slaString: '36 MINS',
         lastMileTravel: 5,
+        promoted:false,
         slugs: {
           restaurant: 'shanmukha-restaurant-jayanagar-jayanagar',
           city: 'bangalore',
@@ -1641,6 +1652,7 @@ const resList = [
         maxDeliveryTime: 36,
         slaString: '36 MINS',
         lastMileTravel: 5,
+        promoted:true,
         slugs: {
           restaurant: 'malnad-donne-biryani-mdb-jayanagar-jayanagar',
           city: 'bangalore',
@@ -1777,6 +1789,7 @@ const resList = [
         maxDeliveryTime: 29,
         slaString: '29 MINS',
         lastMileTravel: 4.5,
+        promoted:false,
         slugs: {
           restaurant: 'litti-twist-koramangala-koramangala',
           city: 'bangalore',
@@ -1925,6 +1938,7 @@ const resList = [
         maxDeliveryTime: 30,
         slaString: '30 MINS',
         lastMileTravel: 5.599999904632568,
+        promoted:true,
         slugs: {
           restaurant: 'udupi-palace-00-hsr',
           city: 'bangalore',
