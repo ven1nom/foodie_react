@@ -37493,36 +37493,57 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _menuData = require("../utils/menuData");
 var _menuDataDefault = parcelHelpers.interopDefault(_menuData);
 var _constant = require("../utils/constant");
-//Kya kya baaki hai - upto router tak
-// fetch call kr k display kro and fallback mockData de doo ( if possible last mein krna)
-// resId dena hoga , resTaurant ka uss hisab se , fetch kro data ( But ye bhi fetch wala kaam hai)
-// ResCard click krte hi resMenu Pr aa jaaye
+var _s = $RefreshSig$();
 const ResMenu = ()=>{
+    _s();
+    const [isOpen, setIsOpen] = (0, _react.useState)(true);
+    const toggleAccordion = ()=>{
+        setIsOpen(!isOpen);
+    };
     const menuItems = (0, _menuDataDefault.default).map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "menu-item",
             children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                     children: item.name
                 }, void 0, false, {
                     fileName: "src/components/ResMenu.js",
-                    lineNumber: 13,
-                    columnNumber: 6
+                    lineNumber: 14,
+                    columnNumber: 7
                 }, undefined),
-                item.imageId && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    src: `${(0, _constant.MENUIMG_URL)}${item.imageId}`,
-                    alt: item.name,
-                    className: "menu-item-image"
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "image-container",
+                    children: item.imageId && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                src: `${(0, _constant.MENUIMG_URL)}${item.imageId}`,
+                                alt: item.name,
+                                className: "menu-item-image"
+                            }, void 0, false, {
+                                fileName: "src/components/ResMenu.js",
+                                lineNumber: 18,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: "add-to-cart-btn",
+                                children: "Add to Cart"
+                            }, void 0, false, {
+                                fileName: "src/components/ResMenu.js",
+                                lineNumber: 23,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true)
                 }, void 0, false, {
                     fileName: "src/components/ResMenu.js",
                     lineNumber: 15,
-                    columnNumber: 9
+                    columnNumber: 7
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                     className: "category",
                     children: item.category
                 }, void 0, false, {
                     fileName: "src/components/ResMenu.js",
-                    lineNumber: 20,
+                    lineNumber: 27,
                     columnNumber: 7
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -37530,24 +37551,58 @@ const ResMenu = ()=>{
                     children: item.description
                 }, void 0, false, {
                     fileName: "src/components/ResMenu.js",
-                    lineNumber: 21,
+                    lineNumber: 28,
                     columnNumber: 7
                 }, undefined)
             ]
         }, item.id, true, {
             fileName: "src/components/ResMenu.js",
-            lineNumber: 12,
+            lineNumber: 13,
             columnNumber: 5
         }, undefined));
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "menu-container",
-        children: menuItems
-    }, void 0, false, {
+        className: "menu-accordion",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "accordion-header",
+                onClick: toggleAccordion,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        children: "Recommended"
+                    }, void 0, false, {
+                        fileName: "src/components/ResMenu.js",
+                        lineNumber: 35,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        children: isOpen ? "\u25B2" : "\u25BC"
+                    }, void 0, false, {
+                        fileName: "src/components/ResMenu.js",
+                        lineNumber: 36,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/ResMenu.js",
+                lineNumber: 34,
+                columnNumber: 7
+            }, undefined),
+            isOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "menu-container",
+                children: menuItems
+            }, void 0, false, {
+                fileName: "src/components/ResMenu.js",
+                lineNumber: 38,
+                columnNumber: 18
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "src/components/ResMenu.js",
-        lineNumber: 25,
-        columnNumber: 10
+        lineNumber: 33,
+        columnNumber: 5
     }, undefined);
 };
+_s(ResMenu, "mEi83NlPXQzy/XIDfTYWzOSvaHw=");
 _c = ResMenu;
 exports.default = ResMenu;
 var _c;
