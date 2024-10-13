@@ -34896,6 +34896,7 @@ var _shimmer = require("./Shimmer");
 var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
 var _useOnlineStatus = require("./useOnlineStatus");
 var _useOnlineStatusDefault = parcelHelpers.interopDefault(_useOnlineStatus);
+var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
 function Main() {
     _s();
@@ -34917,7 +34918,7 @@ function Main() {
     //     const cardList=json?.data?.success?.cards[3]?.gridWidget?.gridElements?.infoWithStyle?.restaurants;
     //     setListOfRestaurants(cardList)
     // }
-    const { onlineStatus } = (0, _useOnlineStatusDefault.default);
+    const { onlineStatus } = (0, _useOnlineStatusDefault.default)();
     if (onlineStatus === false) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
         children: "You are Offline"
     }, void 0, false, {
@@ -34980,15 +34981,29 @@ function Main() {
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "card-container",
-                children: listOfRestaurants.map((restaurant)=>restaurant.data.promoted ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestCardPromoted, {
-                        resData: restaurant
-                    }, restaurant.data.id, false, {
+                children: listOfRestaurants.map((restaurant)=>restaurant.data.promoted ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/restaurant/1234",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestCardPromoted, {
+                            resData: restaurant
+                        }, restaurant.data.id, false, {
+                            fileName: "src/components/Main.js",
+                            lineNumber: 71,
+                            columnNumber: 45
+                        }, this)
+                    }, void 0, false, {
                         fileName: "src/components/Main.js",
                         lineNumber: 71,
-                        columnNumber: 18
-                    }, this) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resCardDefault.default), {
-                        resData: restaurant
-                    }, restaurant.data.id, false, {
+                        columnNumber: 17
+                    }, this) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/restaurant/1234",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resCardDefault.default), {
+                            resData: restaurant
+                        }, restaurant.data.id, false, {
+                            fileName: "src/components/Main.js",
+                            lineNumber: 73,
+                            columnNumber: 46
+                        }, this)
+                    }, void 0, false, {
                         fileName: "src/components/Main.js",
                         lineNumber: 73,
                         columnNumber: 18
@@ -35005,7 +35020,11 @@ function Main() {
         columnNumber: 9
     }, this);
 }
-_s(Main, "UAHlaGEhRjsjG5QlMgwZP44Wqcs=");
+_s(Main, "w+9Gu9J2nct2gHhzhYJN00u5Ybs=", false, function() {
+    return [
+        (0, _useOnlineStatusDefault.default)
+    ];
+});
 _c = Main;
 var _c;
 $RefreshReg$(_c, "Main");
@@ -35015,7 +35034,7 @@ $RefreshReg$(_c, "Main");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./ResCard":"ezFeH","../utils/mockData":"iOpE9","./Shimmer":"g6ZGj","./useOnlineStatus":"2TcES","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ezFeH":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./ResCard":"ezFeH","../utils/mockData":"iOpE9","./Shimmer":"g6ZGj","./useOnlineStatus":"2TcES","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ezFeH":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$40f6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -37474,6 +37493,10 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _menuData = require("../utils/menuData");
 var _menuDataDefault = parcelHelpers.interopDefault(_menuData);
 var _constant = require("../utils/constant");
+//Kya kya baaki hai - upto router tak
+// fetch call kr k display kro and fallback mockData de doo ( if possible last mein krna)
+// resId dena hoga , resTaurant ka uss hisab se , fetch kro data ( But ye bhi fetch wala kaam hai)
+// ResCard click krte hi resMenu Pr aa jaaye
 const ResMenu = ()=>{
     const menuItems = (0, _menuDataDefault.default).map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "menu-item",
@@ -37482,7 +37505,7 @@ const ResMenu = ()=>{
                     children: item.name
                 }, void 0, false, {
                     fileName: "src/components/ResMenu.js",
-                    lineNumber: 8,
+                    lineNumber: 13,
                     columnNumber: 6
                 }, undefined),
                 item.imageId && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -37491,7 +37514,7 @@ const ResMenu = ()=>{
                     className: "menu-item-image"
                 }, void 0, false, {
                     fileName: "src/components/ResMenu.js",
-                    lineNumber: 10,
+                    lineNumber: 15,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -37499,7 +37522,7 @@ const ResMenu = ()=>{
                     children: item.category
                 }, void 0, false, {
                     fileName: "src/components/ResMenu.js",
-                    lineNumber: 15,
+                    lineNumber: 20,
                     columnNumber: 7
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -37507,13 +37530,13 @@ const ResMenu = ()=>{
                     children: item.description
                 }, void 0, false, {
                     fileName: "src/components/ResMenu.js",
-                    lineNumber: 16,
+                    lineNumber: 21,
                     columnNumber: 7
                 }, undefined)
             ]
         }, item.id, true, {
             fileName: "src/components/ResMenu.js",
-            lineNumber: 7,
+            lineNumber: 12,
             columnNumber: 5
         }, undefined));
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37521,7 +37544,7 @@ const ResMenu = ()=>{
         children: menuItems
     }, void 0, false, {
         fileName: "src/components/ResMenu.js",
-        lineNumber: 20,
+        lineNumber: 25,
         columnNumber: 10
     }, undefined);
 };
@@ -37535,7 +37558,7 @@ $RefreshReg$(_c, "ResMenu");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../utils/menuData":"70J6j","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/constant":"6mqGZ"}],"70J6j":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../utils/menuData":"70J6j","../utils/constant":"6mqGZ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"70J6j":[function(require,module,exports) {
 // menuData.js
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);

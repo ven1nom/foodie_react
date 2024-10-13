@@ -1,9 +1,9 @@
 import React,{useEffect, useState} from "react"
 import ResCard,{withPromotedLabel} from "./ResCard"
 import resList from "../utils/mockData"
-import RestaurantCard from "./ResCard";
 import Shimmer from "./Shimmer";
 import useOnlineStatus from "./useOnlineStatus";
+import { Link } from "react-router-dom";
 
 
 export default function Main()
@@ -33,7 +33,7 @@ export default function Main()
         
 
     // }
- const {onlineStatus}=useOnlineStatus;
+ const {onlineStatus}=useOnlineStatus();
 
 if(onlineStatus===false)
 {
@@ -68,9 +68,9 @@ if(onlineStatus===false)
              <div className="card-container">
              {listOfRestaurants.map((restaurant) => (
                restaurant.data.promoted ? (
-                 <RestCardPromoted resData={restaurant} key={restaurant.data.id} />
+                <Link to="/restaurant/1234"><RestCardPromoted resData={restaurant} key={restaurant.data.id} /></Link> 
                ) : (
-                 <ResCard resData={restaurant} key={restaurant.data.id} />
+                 <Link to="/restaurant/1234"><ResCard resData={restaurant} key={restaurant.data.id} /></Link>
                )
              ))}
              </div>
