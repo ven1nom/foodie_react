@@ -9,7 +9,13 @@ import useOnlineStatus from "./useOnlineStatus";
 export default function Main()
 {
     const [listOfRestaurants,setListOfRestaurants]=useState(resList)
-    
+    //following state is for Search Functionality
+    const [search,setSearch]=useState('')
+    //search button function
+    function handleSearch(){
+        
+    }
+
     //HOC
     const RestCardPromoted=withPromotedLabel(ResCard);
     
@@ -42,10 +48,8 @@ if(onlineStatus===false)
     return(
         <div className="main-section">
             <div>
-                <input type="text" placeholder="Search Restaurants"/>
-                <button onClick={()=>{
-                    console.log("Search")
-                }}>
+                <input type="text" value={search} placeholder="Search Restaurants"/>
+                <button onClick={handleSearch()}>
                      Search
                 </button>
             </div>

@@ -21,13 +21,14 @@ const onlineStatus = useOnlineStatus();
         <nav>
             <img src={LOGO_URL} alt="logo"/>
             <ul >
-                <button onClick={handleLogin}>{userLogin}</button>
+           
                 <li>OnlineStatus: {onlineStatus ? "YES" : "NO"}</li>
                 <li><Link to="/">HOME</Link></li>
                 <li><Link to="/about">ABOUT US</Link></li>
                 <li><Link to="/contact">CONTACT US</Link></li>
                 <li><Link to="/grocery">GROCERY</Link></li>
                 <li>CART</li>
+                <button onClick={handleLogin}>{userLogin}</button>
             </ul>
         </nav>
     )

@@ -2969,6 +2969,8 @@ var _contact = require("./components/Contact");
 var _contactDefault = parcelHelpers.interopDefault(_contact);
 var _error = require("./components/Error");
 var _errorDefault = parcelHelpers.interopDefault(_error);
+var _resMenu = require("./components/ResMenu");
+var _resMenuDefault = parcelHelpers.interopDefault(_resMenu);
 //import Grocery from "./components/Grocery";
 const Grocery = /*#__PURE__*/ (0, _react.lazy)(()=>require("6bf9e24f54814dcb"));
 _c = Grocery;
@@ -2978,23 +2980,23 @@ function AppLayout() {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 18,
+                lineNumber: 19,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 19,
+                lineNumber: 20,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 20,
+                lineNumber: 21,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/App.js",
-        lineNumber: 17,
+        lineNumber: 18,
         columnNumber: 9
     }, this);
 }
@@ -3004,7 +3006,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 28,
+            lineNumber: 29,
             columnNumber: 17
         }, undefined),
         children: [
@@ -3012,7 +3014,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _mainDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 32,
+                    lineNumber: 33,
                     columnNumber: 21
                 }, undefined)
             },
@@ -3020,7 +3022,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/about",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 36,
+                    lineNumber: 37,
                     columnNumber: 25
                 }, undefined)
             },
@@ -3028,14 +3030,22 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/contact",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 40,
+                    lineNumber: 41,
+                    columnNumber: 25
+                }, undefined)
+            },
+            {
+                path: "/restaurant/1234",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resMenuDefault.default), {}, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 45,
                     columnNumber: 25
                 }, undefined)
             }
         ],
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 44,
+            lineNumber: 49,
             columnNumber: 22
         }, undefined)
     },
@@ -3046,20 +3056,20 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 children: "Loading...."
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 47,
+                lineNumber: 52,
                 columnNumber: 37
             }, void 0),
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Grocery, {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 48,
+                    lineNumber: 53,
                     columnNumber: 14
                 }, undefined),
                 ","
             ]
         }, void 0, true, {
             fileName: "src/App.js",
-            lineNumber: 47,
+            lineNumber: 52,
             columnNumber: 17
         }, undefined)
     }
@@ -3069,7 +3079,7 @@ const root = document.getElementById("root");
     router: appRouter
 }, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 56,
+    lineNumber: 61,
     columnNumber: 25
 }, undefined));
 var _c, _c1;
@@ -3081,7 +3091,7 @@ $RefreshReg$(_c1, "AppLayout");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/Header":"hsJbF","./components/Main":"jWapa","./components/Footer":"8pPOA","react-router-dom":"9xmpe","./components/About":"9R1Eu","./components/Contact":"cgAOG","./components/Error":"kvula","6bf9e24f54814dcb":"e2h3k","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/Header":"hsJbF","./components/Main":"jWapa","./components/Footer":"8pPOA","react-router-dom":"9xmpe","./components/About":"9R1Eu","./components/Contact":"cgAOG","./components/Error":"kvula","./components/ResMenu":"64uZe","6bf9e24f54814dcb":"e2h3k","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27363,14 +27373,6 @@ function Header() {
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        onClick: handleLogin,
-                        children: userLogin
-                    }, void 0, false, {
-                        fileName: "src/components/Header.js",
-                        lineNumber: 24,
-                        columnNumber: 17
-                    }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: [
                             "OnlineStatus: ",
@@ -27443,6 +27445,14 @@ function Header() {
                         fileName: "src/components/Header.js",
                         lineNumber: 30,
                         columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        onClick: handleLogin,
+                        children: userLogin
+                    }, void 0, false, {
+                        fileName: "src/components/Header.js",
+                        lineNumber: 31,
+                        columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
@@ -27472,12 +27482,15 @@ $RefreshReg$(_c, "Header");
   window.$RefreshSig$ = prevRefreshSig;
 }
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../utils/constant":"6mqGZ","react-router-dom":"9xmpe","./useOnlineStatus":"2TcES","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6mqGZ":[function(require,module,exports) {
+// THIS URL FOR FETCHING DATA
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "CDN_URL", ()=>CDN_URL);
 parcelHelpers.export(exports, "LOGO_URL", ()=>LOGO_URL);
+parcelHelpers.export(exports, "MENUIMG_URL", ()=>MENUIMG_URL);
 const CDN_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
 const LOGO_URL = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbrEoGN30ycyxwFM_KY3t_zSrkfMaQ_3e7ow&s";
+const MENUIMG_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/";
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
@@ -34887,6 +34900,10 @@ var _s = $RefreshSig$();
 function Main() {
     _s();
     const [listOfRestaurants, setListOfRestaurants] = (0, _react.useState)((0, _mockDataDefault.default));
+    //following state is for Search Functionality
+    const [search, setSearch] = (0, _react.useState)("");
+    //search button function
+    function handleSearch() {}
     //HOC
     const RestCardPromoted = (0, _resCard.withPromotedLabel)((0, _resCardDefault.default));
     (0, _react.useEffect)(()=>{
@@ -34905,12 +34922,12 @@ function Main() {
         children: "You are Offline"
     }, void 0, false, {
         fileName: "src/components/Main.js",
-        lineNumber: 35,
+        lineNumber: 41,
         columnNumber: 9
     }, this);
     if (listOfRestaurants === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/Main.js",
-        lineNumber: 40,
+        lineNumber: 46,
         columnNumber: 11
     }, this);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34920,26 +34937,25 @@ function Main() {
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                         type: "text",
+                        value: search,
                         placeholder: "Search Restaurants"
                     }, void 0, false, {
                         fileName: "src/components/Main.js",
-                        lineNumber: 45,
+                        lineNumber: 51,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        onClick: ()=>{
-                            console.log("Search");
-                        },
+                        onClick: handleSearch(),
                         children: "Search"
                     }, void 0, false, {
                         fileName: "src/components/Main.js",
-                        lineNumber: 46,
+                        lineNumber: 52,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Main.js",
-                lineNumber: 44,
+                lineNumber: 50,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34954,12 +34970,12 @@ function Main() {
                     children: "Top Rated Restuarant"
                 }, void 0, false, {
                     fileName: "src/components/Main.js",
-                    lineNumber: 53,
+                    lineNumber: 57,
                     columnNumber: 14
                 }, this)
             }, void 0, false, {
                 fileName: "src/components/Main.js",
-                lineNumber: 52,
+                lineNumber: 56,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34968,28 +34984,28 @@ function Main() {
                         resData: restaurant
                     }, restaurant.data.id, false, {
                         fileName: "src/components/Main.js",
-                        lineNumber: 67,
+                        lineNumber: 71,
                         columnNumber: 18
                     }, this) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resCardDefault.default), {
                         resData: restaurant
                     }, restaurant.data.id, false, {
                         fileName: "src/components/Main.js",
-                        lineNumber: 69,
+                        lineNumber: 73,
                         columnNumber: 18
                     }, this))
             }, void 0, false, {
                 fileName: "src/components/Main.js",
-                lineNumber: 64,
+                lineNumber: 68,
                 columnNumber: 14
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/components/Main.js",
-        lineNumber: 43,
+        lineNumber: 49,
         columnNumber: 9
     }, this);
 }
-_s(Main, "d3JHwvmfcaunFeSoOJfQdCbacP0=");
+_s(Main, "UAHlaGEhRjsjG5QlMgwZP44Wqcs=");
 _c = Main;
 var _c;
 $RefreshReg$(_c, "Main");
@@ -37443,7 +37459,336 @@ $RefreshReg$(_c, "Error");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"e2h3k":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"64uZe":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ebe7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ebe7.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _menuData = require("../utils/menuData");
+var _menuDataDefault = parcelHelpers.interopDefault(_menuData);
+var _constant = require("../utils/constant");
+const ResMenu = ()=>{
+    const menuItems = (0, _menuDataDefault.default).map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "menu-item",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: item.name
+                }, void 0, false, {
+                    fileName: "src/components/ResMenu.js",
+                    lineNumber: 8,
+                    columnNumber: 6
+                }, undefined),
+                item.imageId && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: `${(0, _constant.MENUIMG_URL)}${item.imageId}`,
+                    alt: item.name,
+                    className: "menu-item-image"
+                }, void 0, false, {
+                    fileName: "src/components/ResMenu.js",
+                    lineNumber: 10,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "category",
+                    children: item.category
+                }, void 0, false, {
+                    fileName: "src/components/ResMenu.js",
+                    lineNumber: 15,
+                    columnNumber: 7
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "description",
+                    children: item.description
+                }, void 0, false, {
+                    fileName: "src/components/ResMenu.js",
+                    lineNumber: 16,
+                    columnNumber: 7
+                }, undefined)
+            ]
+        }, item.id, true, {
+            fileName: "src/components/ResMenu.js",
+            lineNumber: 7,
+            columnNumber: 5
+        }, undefined));
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "menu-container",
+        children: menuItems
+    }, void 0, false, {
+        fileName: "src/components/ResMenu.js",
+        lineNumber: 20,
+        columnNumber: 10
+    }, undefined);
+};
+_c = ResMenu;
+exports.default = ResMenu;
+var _c;
+$RefreshReg$(_c, "ResMenu");
+
+  $parcel$ReactRefreshHelpers$ebe7.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../utils/menuData":"70J6j","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/constant":"6mqGZ"}],"70J6j":[function(require,module,exports) {
+// menuData.js
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+exports.default = menuData = [
+    {
+        id: "123340261",
+        name: "Double Chicken Roll Meal for 1",
+        category: "New Chicken Rolls",
+        description: "Save Rs. 24 with a Double Chicken Roll with servings of 1 Large Fries, 2 delish dips and 1 Pepsi PET 475ml [1 unit of Double Chicken Roll, Serves 1]",
+        imageId: "FOOD_CATALOG/IMAGES/CMS/2024/5/17/00af9641-700d-462f-890f-47e358b63bfb_68cecb16-fd2a-4d7d-9392-b5f83d72eaaf.jpg",
+        inStock: 1,
+        isVeg: false,
+        price: 37905,
+        ratings: {
+            aggregatedRating: {
+                rating: "1.4",
+                ratingCount: "3 ratings",
+                ratingCountV2: "3"
+            }
+        },
+        offerTags: [
+            {
+                title: "40% OFF",
+                subTitle: "USE TRYNEW",
+                textColor: "#DB6742",
+                backgroundColor: "#FAE8E3"
+            }
+        ]
+    },
+    {
+        id: "123340262",
+        name: "Classic Chicken Roll Meal for 2",
+        category: "New Chicken Rolls",
+        description: "2 units of The classic KFC Chicken Roll with servings of 1 Large Fries, 2 delish dips and 1 Pepsi PET 475ml [2 units of Classic Chicken Roll, Serves 2]",
+        imageId: "FOOD_CATALOG/IMAGES/CMS/2024/5/10/183cb04b-d716-443a-91d9-27f26c566adc_e3c2c7c7-b9a8-4881-a4b5-05532b10ec0a.jpg",
+        inStock: 1,
+        isVeg: false,
+        price: 47905,
+        ratings: {
+            aggregatedRating: {}
+        },
+        offerTags: [
+            {
+                title: "40% OFF",
+                subTitle: "USE TRYNEW",
+                textColor: "#DB6742",
+                backgroundColor: "#FAE8E3"
+            }
+        ]
+    },
+    {
+        id: "145447712",
+        name: "Thai Spicy Chicken Roll",
+        category: "New Chicken Rolls",
+        description: "Fresh burst of Thai flavours and sauces in a flaky paratha, chicken strips and vegetables",
+        imageId: "FOOD_CATALOG/IMAGES/CMS/2024/7/9/fa48d82c-2322-4ba7-b419-27e79ca1b217_0800d19e-02b8-45e2-ad64-21ee0d877821.jpg",
+        inStock: 1,
+        isVeg: false,
+        price: 11900,
+        ratings: {
+            aggregatedRating: {
+                rating: "4.0",
+                ratingCount: "12 ratings",
+                ratingCountV2: "12"
+            }
+        },
+        offerTags: [
+            {
+                title: "40% OFF",
+                subTitle: "USE TRYNEW",
+                textColor: "#DB6742",
+                backgroundColor: "#FAE8E3"
+            }
+        ]
+    },
+    {
+        id: "145447711",
+        name: "Indian Tandoori Chicken Roll",
+        category: "New Chicken Rolls",
+        description: "Flavorful roll made with flaky lachha paratha, perfectly fried chicken strips in rich and creamy tandoori sauce",
+        imageId: "FOOD_CATALOG/IMAGES/CMS/2024/7/9/4c966f38-c191-4d0e-a54c-c70b832e4de1_69ee13c1-f267-4385-ab98-6efbc811de33.jpg",
+        inStock: 1,
+        isVeg: false,
+        isBestseller: true,
+        price: 11900,
+        ratings: {
+            aggregatedRating: {
+                rating: "4.5",
+                ratingCount: "23 ratings",
+                ratingCountV2: "23"
+            }
+        },
+        offerTags: [
+            {
+                title: "40% OFF",
+                subTitle: "USE TRYNEW",
+                textColor: "#DB6742",
+                backgroundColor: "#FAE8E3"
+            }
+        ],
+        ribbon: {
+            text: "Bestseller",
+            textColor: "#ffffff",
+            topBackgroundColor: "#d53d4c"
+        }
+    },
+    {
+        id: "145447714",
+        name: "Korean Tangy Chicken Roll",
+        category: "New Chicken Rolls",
+        description: "Delicious new roll featuring tangy Korean kimchi, vegetables and crunchy chicken strips",
+        imageId: "FOOD_CATALOG/IMAGES/CMS/2024/7/9/377309f8-992e-4fea-a461-1ab5d7218b5e_b814bc78-3961-4332-96df-8aefb9ba86e4.jpg",
+        inStock: 1,
+        isVeg: false,
+        isBestseller: true,
+        price: 11900,
+        ratings: {
+            aggregatedRating: {
+                rating: "4.2",
+                ratingCount: "41 ratings",
+                ratingCountV2: "41"
+            }
+        },
+        offerTags: [
+            {
+                title: "40% OFF",
+                subTitle: "USE TRYNEW",
+                textColor: "#DB6742",
+                backgroundColor: "#FAE8E3"
+            }
+        ],
+        ribbon: {
+            text: "Bestseller",
+            textColor: "#ffffff",
+            topBackgroundColor: "#d53d4c"
+        }
+    },
+    {
+        id: "147823092",
+        name: "Korean & Thai Roll Chicken Meal",
+        category: "New Chicken Rolls",
+        description: "Rs. 114 Off on Korean Tangy Roll & Thai Spicy Roll, Large Popcorn, Large Fries & Pepsi PET 475ml",
+        imageId: "FOOD_CATALOG/IMAGES/CMS/2024/7/19/4c4e85fc-9a85-41b7-a9d6-644b92c144da_a8391eb4-db4c-41cc-b7d5-02114443fc5c.jpg",
+        inStock: 1,
+        isVeg: false,
+        price: 54900,
+        ratings: {
+            aggregatedRating: {}
+        },
+        offerTags: [
+            {
+                title: "40% OFF",
+                subTitle: "USE TRYNEW",
+                textColor: "#DB6742",
+                backgroundColor: "#FAE8E3"
+            }
+        ]
+    },
+    {
+        id: "147823090",
+        name: "Indian Tandoori Roll Chicken Meal",
+        category: "New Chicken Rolls",
+        description: "Save Rs. 75 on Indian Tandoori Roll, Classic Zinger Burger, Medium Fries & Pepsi PET 475ml",
+        imageId: "FOOD_CATALOG/IMAGES/CMS/2024/7/19/5d439a47-5bce-4010-b1b1-bc2f8344367b_8ed35bd6-33f3-419e-a5ee-62efb83a6a45.jpg",
+        inStock: 1,
+        isVeg: false,
+        price: 39900,
+        ratings: {
+            aggregatedRating: {
+                rating: "4.8",
+                ratingCount: "5 ratings",
+                ratingCountV2: "5"
+            }
+        },
+        offerTags: [
+            {
+                title: "40% OFF",
+                subTitle: "USE TRYNEW",
+                textColor: "#DB6742",
+                backgroundColor: "#FAE8E3"
+            }
+        ]
+    },
+    {
+        id: "147823088",
+        name: "Korean Tangy Roll & Popcorn Chicken Meal",
+        category: "New Chicken Rolls",
+        description: "Save Rs. 56 with Korean Tangy Chicken Roll, Medium Popcorn and Pepsi PET 475ml",
+        imageId: "FOOD_CATALOG/IMAGES/CMS/2024/7/19/d980ce4c-4c08-4522-8467-3370e1e3a54f_c0843f3c-59f5-4037-9e65-0193e7ff16a7.jpg",
+        inStock: 1,
+        isVeg: false,
+        price: 29900,
+        ratings: {
+            aggregatedRating: {
+                rating: "3.0",
+                ratingCount: "3 ratings",
+                ratingCountV2: "3"
+            }
+        },
+        offerTags: [
+            {
+                title: "40% OFF",
+                subTitle: "USE TRYNEW",
+                textColor: "#DB6742",
+                backgroundColor: "#FAE8E3"
+            }
+        ]
+    },
+    {
+        id: "147823085",
+        name: "Thai Spicy Roll & Zinger Chicken Meal",
+        category: "New Chicken Rolls",
+        description: "Save Rs. 75 with Thai Spicy Roll with Classic Zinger Burger, Medium Fries and Pepsi PET 475ml",
+        imageId: "FOOD_CATALOG/IMAGES/CMS/2024/7/19/e0406e96-cf1e-4b8e-a5ac-b4b146275c79_783e1b21-34c8-49dc-8b65-d1d0e9516028.jpg",
+        inStock: 1,
+        isVeg: false,
+        price: 39900,
+        ratings: {
+            aggregatedRating: {}
+        },
+        offerTags: [
+            {
+                title: "40% OFF",
+                subTitle: "USE TRYNEW",
+                textColor: "#DB6742",
+                backgroundColor: "#FAE8E3"
+            }
+        ]
+    },
+    {
+        id: "147823084",
+        name: "American Roll & Popcorn Chicken Meal",
+        category: "New Chicken Rolls",
+        description: "Save Rs. 56 with American Nashville Chicken Roll, Medium Popcorn and Pepsi PET 475ml",
+        imageId: "FOOD_CATALOG/IMAGES/CMS/2024/7/19/5c2e6a8e-c457-4206-ba9c-671bed55def8_7a5456db-4ab5-4f45-be97-40a6a366de83.jpg",
+        inStock: 1,
+        isVeg: false,
+        price: 29900,
+        ratings: {
+            aggregatedRating: {}
+        },
+        offerTags: [
+            {
+                title: "40% OFF",
+                subTitle: "USE TRYNEW",
+                textColor: "#DB6742",
+                backgroundColor: "#FAE8E3"
+            }
+        ]
+    }
+];
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"e2h3k":[function(require,module,exports) {
 module.exports = require("29af259fc1f64a1c")(require("4c1094922790cfac").getBundleURL("aXMci") + "Grocery.c52c2ad2.js" + "?" + Date.now()).catch((err)=>{
     delete module.bundle.cache[module.id];
     throw err;
